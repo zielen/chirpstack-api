@@ -540,16 +540,16 @@ message GatewayStats {
     google.protobuf.Timestamp timestamp = 1;
 
     // Packets received by the gateway.
-    int32 rx_packets_received = 2;
+    int64 rx_packets_received = 2;
 
     // Packets received by the gateway that passed the CRC check.
-    int32 rx_packets_received_ok = 3;
+    int64 rx_packets_received_ok = 3;
 
     // Packets received by the gateway for transmission.
-    int32 tx_packets_received = 4;
+    int64 tx_packets_received = 4;
 
     // Packets transmitted by the gateway.
-    int32 tx_packets_emitted = 5;
+    int64 tx_packets_emitted = 5;
 }
 
 message GetGatewayStatsRequest {
